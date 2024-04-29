@@ -3,7 +3,7 @@ const algodToken = "a".repeat(64);
 const server: string = "http://localhost";
 const port: string = "4001";
 const mnemonic: string =
-  "animal force mango vital comic cover attract proof hard circle pig salmon able enrich brown taste umbrella possible beauty diamond blame antique pattern above favorite";
+"evil toy idea unique begin sphere over amused excuse rival room half junk tag raise attract economy school uphold inject ready sketch unveil abstract talent";
 export function getClient(): algosdk.Algodv2 {
   let client = new algosdk.Algodv2(algodToken, server, port);
 return client;
