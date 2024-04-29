@@ -1,4 +1,5 @@
 import { faker } from "@faker-js/faker";
+import { storeDaysData } from "../helpers/helpers.js";
 
 export const generateLondonDaysData = (): DaysData => {
   // Generate random weather data
@@ -8,7 +9,7 @@ export const generateLondonDaysData = (): DaysData => {
     dayThree: faker.number.int({ min: 2, max: 78 }),
     
   };
-
+  storeDaysData(generatedDaysData).catch(console.error);
   // Return weather data
   return generatedDaysData;
 };
