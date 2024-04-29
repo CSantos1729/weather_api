@@ -13,3 +13,21 @@ interface DaysData {
   dayThree: number;
   
 }
+
+interface HealthRecord {
+  patientName: string;
+  age: number;
+  gender: string;
+  medicalCondition: string;
+  prescription: string;
+  labResults: {
+    cholesterol: number;
+    bloodPressure: string;
+    bloodSugar: number;
+  };
+  appointments: {
+    date: Date;
+    doctor: string;
+    department: string;
+  }[];
+}
