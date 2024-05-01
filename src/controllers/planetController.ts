@@ -13,12 +13,12 @@ export const getPlanetData = async (req: Request, res: Response) => {
     let finalPlanetData: PlanetData;
 
     // Determine which planet data to generate based on the planet name
-    // Check which city was passed in
+    // Check which planet was passed in
     if (planet === "earth") {
       console.log(generatePlanetData());
       finalPlanetData = generatePlanetData();
     } else {
-      // If the city is not London, send a 404 error
+      // If the planet is not right, send a 404 error
       res.status(404).send("Planet not found");
       return; // Exit the function early
     }

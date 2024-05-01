@@ -16,7 +16,7 @@ export const generatePlanetData = (): PlanetData => {
     saturn: faker.number.int({ min: -178, max: -138 }), // Saturn's temperature range in Celsius
     uranus: faker.number.int({ min: -224, max: -197 }), // Uranus's temperature range in Celsius
     neptune: faker.number.int({ min: -228, max: -201 }), // Neptune's temperature range in Celsius
-    // Add more planets as needed
+   
   };
   
   // Store the generated planet data
