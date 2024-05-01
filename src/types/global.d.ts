@@ -13,3 +13,10 @@ interface DaysData {
   dayThree: number;
   
 }
+
+interface SpaceWeatherData {
+  date: Date;
+  solarWindSpeed: number;
+  geomagneticStorm: boolean;
+  // Add more fields as needed based on the response from your API
+}
