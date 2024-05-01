@@ -1,3 +1,4 @@
+//algokit goal account export -a CAEEYPVTNO7HHYJCHDDF6FHSS6C5HEEZWMPHKNZDQWFQQ6VTICB5STSZAY
 import algosdk from "algosdk";
 import { getClient, getAccount } from "../config/config.js";
 export const storeWeatherData = async (data: WeatherData): Promise<void> => {
