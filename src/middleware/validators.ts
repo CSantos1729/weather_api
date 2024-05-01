@@ -17,3 +17,12 @@ export const validateCityName = param("city")
   .isIn(["london", "dublin"])
   // We will use the withMessage method to set a custom error message
   .withMessage("City name must be either london or dublin");
+
+  export const validatePlanetName = param("planet")
+  // We will use the isString method to check if the city param is a string
+  .isString()
+  // We will use the isIn method to check if the city param is either london or dublin
+  .isIn(["london", "dublin"])
+  // We will use the withMessage method to set a custom error message
+  .withMessage("City name must be either london or dublin");
+
