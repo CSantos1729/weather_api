@@ -1,6 +1,6 @@
 import express from "express";
 import weatherRoute from "./routes/weatherRoute.js";
-import daysRoute from "./routes/daysRoute.js";
+import planetRoute from "./routes/planetRoute.js";
 import SpaceWeatherRoute from "./routes/SpaceWeatherRoute.js"
 import cors from "cors";
 
@@ -17,7 +17,7 @@ app.use(cors());
 // We define our first route
 app.use("/api/weather", weatherRoute);
 // second route
-app.use("/api/days", daysRoute);
+app.use("/api/planet", planetRoute);
 app.use("/api/space-weather", SpaceWeatherRoute);
 // Start the express server
 app.listen(PORT, () => {
